@@ -4,6 +4,19 @@ import { motion } from 'framer-motion';
 import {ArrowLeft, Grid2x2 } from 'lucide-react'
 import productsData from '../data/products.json';
 
+// Importar imágenes
+import ShirtsImage from '../assets/Shirts.jpeg';
+import ShirtWhiteImage from '../assets/ShirtWhite.png';
+import ToteBagImage from '../assets/ToteBag.jpeg';
+import ToteBagExampleImage from '../assets/totebagExample.png';
+import ToteBagNegraImage from '../assets/ToteBagNegra.png';
+
+// Mapeo de imágenes por producto
+const productImages: Record<number, string[]> = {
+  1: [ShirtsImage, ShirtWhiteImage],
+  2: [ToteBagImage, ToteBagExampleImage, ToteBagNegraImage],
+};
+
 const ProductDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -79,14 +92,14 @@ const ProductDetail = () => {
 
               <div className="bg-neutral-900 rounded-lg overflow-hidden border-2 border-neutral-800">
                 <img
-                  src={product.images[currentImageIndex]}
+                  src={productImages[product.id]?.[currentImageIndex] || product.images[currentImageIndex]}
                   alt={product.title}
                   className="w-full  object-cover"
                 />
               </div>
 
               <div className="grid grid-cols-3 gap-4 mt-4">
-                {product.images.map((img, idx) => (
+                {(productImages[product.id] || product.images).map((img, idx) => (
                   <button
                     key={idx}
                     onClick={() => setCurrentImageIndex(idx)}

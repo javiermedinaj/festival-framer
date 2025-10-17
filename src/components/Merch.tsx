@@ -3,6 +3,19 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import productsData from '../data/products.json';
 
+// Importar imágenes
+import ShirtsImage from '../assets/Shirts.jpeg';
+import ShirtWhiteImage from '../assets/ShirtWhite.png';
+import ToteBagImage from '../assets/ToteBag.jpeg';
+import ToteBagExampleImage from '../assets/totebagExample.png';
+import ToteBagNegraImage from '../assets/ToteBagNegra.png';
+
+// Mapeo de imágenes por producto
+const productImages: Record<number, string[]> = {
+  1: [ShirtsImage, ShirtWhiteImage],
+  2: [ToteBagImage, ToteBagExampleImage, ToteBagNegraImage],
+};
+
 const MerchItem = ({
   id,
   images,
@@ -60,7 +73,7 @@ const MerchItem = ({
           transition={{ duration: 0.2 }}
         >
           <motion.img
-            src={images[0]}
+            src={productImages[id]?.[0] || images[0]}
             alt={title}
             className="w-full aspect-square object-cover"
             animate={isHovered ? { scale: 1.1 } : { scale: 1 }}
