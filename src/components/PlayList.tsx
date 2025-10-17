@@ -10,14 +10,13 @@ const PlayList: React.FC<{ playlistId?: string }> = ({ playlistId }) => {
   const src = `https://open.spotify.com/embed/playlist/${id}`;
 
   return (
-    <div className="w-full py-10 px-2 bg-black flex justify-center">
-      <div className="container rounded overflow-hidden max-w-5xl">
+    <div className="w-full py-10 px-4 bg-black flex justify-center">
+      <div className="container rounded overflow-hidden max-w-7xl">
         <iframe
           title="spotify-playlist"
           src={src}
           width="100%"
           height={580}
-          
           allow="encrypted-media; clipboard-write"
         />
       </div>

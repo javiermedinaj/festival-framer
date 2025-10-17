@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+/* Fuente principal - Bebas Neue (estilo Lollapalooza) */
+body {
+  font-family: 'Bebas Neue', 'Impact', sans-serif;
+}
+
+/* Clases para títulos con estilo festival */
+.festival-title {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+/* Para textos más condensados (aún más parecido a Lolla) */
+.festival-condensed {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  transform: scaleX(0.85);
+  transform-origin: left;
+}

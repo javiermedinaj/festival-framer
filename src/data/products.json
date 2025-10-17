@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Remera Festival 2025",
+    "description": "Remera oficial del festival 2025. Diseño exclusivo con gráficos de alta calidad. Confeccionada en algodón premium 100% respirable.",
+    "price": "15.000",
+    "originalPrice": null,
+    "onSale": false,
+    "category": "remeras",
+    "images": [
+      "/src/assets/Shirts.jpeg",
+      "/src/assets/ShirtWhite.png"
+     
+    ],
+    "sizes": [
+      { "size": "XS", "stock": 5 },
+      { "size": "S", "stock": 12 },
+      { "size": "M", "stock": 20 },
+      { "size": "L", "stock": 15 },
+      { "size": "XL", "stock": 8 },
+      { "size": "2XL", "stock": 3 }
+    ],
+    "totalStock": 63,
+    "material": "100% Algodón",
+    "care": "Lavar a máquina en agua fría"
+  },
+  {
+    "id": 2,
+    "title": "Tote Bag Oficial",
+    "description": "Bolso tote oficial del festival. Perfecto para llevar tus objetos personales. Diseño resistente y espacioso con estampado exclusivo.",
+    "price": "12.000",
+    "originalPrice": "18.000",
+    "onSale": true,
+    "category": "accesorios",
+    "images": [
+      "/src/assets/ToteBag.jpeg",
+      "/src/assets/totebagExample.png",
+      "/src/assets/ToteBagNegra.png"
+    ],
+    "sizes": [
+      { "size": "Único", "stock": 45 }
+    ],
+    "totalStock": 45,
+    "material": "Canvas de algodón",
+    "care": "Lavar a mano en agua fría"
+  }
+]

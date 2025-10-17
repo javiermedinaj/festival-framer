@@ -1,41 +1,30 @@
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import TextInfo from "./components/TextInfo";
-import PlayList from "./components/PlayList";
-import Footer from "./components/Footer";
-import Merch from "./components/Merch";
-import Schedules from "./components/Schedules";
-import LoaderGsap from "./components/Loader/LoaderGsap";
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import Home from "./pages/Home";
+import ProductDetail from "./pages/ProductDetail";
+import ScrollToTop from "./components/ScrollToTop";
+import NotFoundPage from "./pages/404";
+import LineUp from "./pages/LineUp";
+import SustainabilityPage from "./pages/Sustainability";
+import RecyclePage from "./pages/Recycle";
+import GreenSpiritPage from "./pages/GreenSpirit";
 
 function App() {
-  const textInfoRef = useRef<HTMLElement | null>(null);
-  const { scrollYProgress: globalProgress } = useScroll();
-  const globalScaleX = useTransform(globalProgress, [0, 1], [0, 1]);
-
-  const [loading, setLoading] = useState(true);
-
   return (
-    <div>
-      {loading && <LoaderGsap onFinish={() => setLoading(false)} />}
-      <Navbar />
-      <Hero />
-      <div className="fixed top-0 left-0 right-0 z-50">
-        <motion.div
-          style={{ scaleX: globalScaleX, transformOrigin: "0 50%" }}
-          className="h-2 bg-yellow-400 origin-left w-full"
-        />
-      </div>
-      <div ref={textInfoRef as any}>
-        <TextInfo />
-      </div>
-      <Schedules />
-      <Merch />
-      <PlayList />
-      <Footer />
-    </div>
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route path="*" element={<NotFoundPage />} />
+          <Route index element={<Home />} />
+          <Route path="/producto/:id" element={<ProductDetail />} />
+          <Route path="/lineup" element={<LineUp />} />
+          <Route path="/sustentabilidad" element={<SustainabilityPage />} />
+          <Route path="/recycle" element={<RecyclePage />} />
+          <Route path="/green-spirit" element={<GreenSpiritPage />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

@@ -177,7 +177,7 @@ const Schedule = () => {
               className="text-center mt-6"
             >
               <motion.button
-                className="bg-yellow-400 text-black font-black px-12 py-4 uppercase tracking-wider text-lg w-full hover:bg-lime-500 transition-colors"
+                className="bg-yellow-400 text-black font-black px-12 py-4 uppercase tracking-wider text-lg w-full hover:bg-amber-500 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

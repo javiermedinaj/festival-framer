@@ -13,13 +13,10 @@ const LollapaloozaFooter = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-b from-black to-neutral-900 text-white">
-      {/* Newsletter Section */}
-      <div className="px-6 py-16 text-center border-b border-white/10">
+    <footer className="bg-black text-white">
+      <div className="px-6 py-16 text-center border-b border-white/90">
         <div className="max-w-4xl mx-auto">
-          <div className="flex justify-center mb-4">
-            <Mail className="w-12 h-12 text-yellow-400" strokeWidth={1.5} />
-          </div>
+        
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black mb-6 uppercase tracking-tight">
             Dejanos tu email para enterarte de todo.
           </h2>
@@ -54,10 +51,8 @@ const LollapaloozaFooter = () => {
         </div>
       </div>
 
-      {/* Links Section */}
       <div className="px-6 py-12">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-          {/* Festival Column */}
           <div>
             <h3 className="text-lg font-black mb-6 uppercase tracking-wider text-white flex items-center gap-2">
            
@@ -92,7 +87,6 @@ const LollapaloozaFooter = () => {
             </ul>
           </div>
 
-          {/* Ayuda Column */}
           <div>
             <h3 className="text-lg font-black mb-6 uppercase tracking-wider text-white flex items-center gap-2">
            
@@ -112,7 +106,6 @@ const LollapaloozaFooter = () => {
             </ul>
           </div>
 
-          {/* Social Column */}
           <div>
             <h3 className="text-lg font-black mb-6 uppercase tracking-wider text-white flex items-center gap-2">
              
@@ -148,7 +141,6 @@ const LollapaloozaFooter = () => {
             </ul>
           </div>
 
-          {/* Info Column */}
           <div>
             <h3 className="text-lg font-black mb-6 uppercase tracking-wider text-white flex items-center gap-2">
               Info
@@ -167,8 +159,7 @@ const LollapaloozaFooter = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-white/10 px-6 py-6">
+      <div className="border-t border-white/90 px-6 py-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
           <p>© 2026 Enchastre Festival. Todos los derechos reservados.</p>
           <div className="flex gap-6">
