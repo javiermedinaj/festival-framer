@@ -13,7 +13,7 @@ import ItemsCard2 from "../../assets/Recycle/items3.svg";
 import ItemsCard2Seg from "../../assets/Recycle/items4.svg";
 import BottleRecycle from "../../assets/Recycle/BottleRecycle.svg";
 import BoxRecycle from "../../assets/Recycle/BoxRecycle.svg";
-import Derrame from "../../assets/Recycle/derrame.png";
+import Derrame from "../../assets/Recycle/Derrame.png";
 import BlurImage from '../../assets/Recycle/imageBlur.png';
 import Sustentabilidad from '../../assets/sustentability.png';
 
