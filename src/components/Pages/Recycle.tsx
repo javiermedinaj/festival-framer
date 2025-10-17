@@ -1,12 +1,12 @@
 import Banner from "../../assets/Recycle/banner.png";
 import { motion } from "framer-motion";
-import Wave1 from "../../assets/Recycle/wave1.svg";
-import Wave2 from "../../assets/Recycle/wave2.svg";
+import Wave1 from "../../assets/Recycle/Wave1.svg";
+import Wave2 from "../../assets/Recycle/Wave2.svg";
 import Wave3 from "../../assets/Recycle/wave3.svg";
-import Wave4 from "../../assets/Recycle/wave4.svg";
-import Wave6 from "../../assets/Recycle/wave6.svg";
-import Wave7 from "../../assets/Recycle/wave7.svg";
-import Wave8 from "../../assets/Recycle/wave5.svg";
+import Wave4 from "../../assets/Recycle/Wave4.svg";
+import Wave6 from "../../assets/Recycle/Wave6.svg";
+import Wave7 from "../../assets/Recycle/Wave7.svg";
+import Wave8 from "../../assets/Recycle/Wave5.svg";
 import ItemsCard1 from "../../assets/Recycle/items1.svg";
 import ItemsCard1Seg from "../../assets/Recycle/items2.svg";
 import ItemsCard2 from "../../assets/Recycle/items3.svg";
@@ -14,7 +14,6 @@ import ItemsCard2Seg from "../../assets/Recycle/items4.svg";
 import BottleRecycle from "../../assets/Recycle/BottleRecycle.svg";
 import BoxRecycle from "../../assets/Recycle/BoxRecycle.svg";
 import Derrame from "../../assets/Recycle/derrame.png";
-// import WodRock from "../../assets/Recycle/WodRock.png"; 
 import BlurImage from '../../assets/Recycle/imageBlur.png';
 import Sustentabilidad from '../../assets/sustentability.png';
 
