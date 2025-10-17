@@ -8,7 +8,7 @@ import ShirtsImage from '../assets/Shirts.jpeg';
 import ShirtWhiteImage from '../assets/ShirtWhite.png';
 import ToteBagImage from '../assets/ToteBag.jpeg';
 import ToteBagExampleImage from '../assets/totebagExample.png';
-import ToteBagNegraImage from '../assets/ToteBagNegra.png';
+import ToteBagNegraImage from '../assets/TotebagNegra.png';
 
 // Mapeo de imágenes por producto
 const productImages: Record<number, string[]> = {
