@@ -12,12 +12,14 @@ import Recital from "../../assets/Green-spirit/Recital.png";
 const GreenSpirit = () => {
   return (
     <div className="bg-white pb-0 text-black overflow-hidden">
-      <img src={Banner} alt="Green Spirit Banner" className="w-full h-full pt-20 object-cover" />
+      <img
+        src={Banner}
+        alt="Green Spirit Banner"
+        className="w-full h-full pt-20 object-cover"
+      />
       {/* section 1 */}
       <section className="bg-black py-20  px-6 justify-center text-center">
-        <h2
-          className="text-5xl md:text-7xl text-white uppercase tracking-tighter leading-tight mb-6"
-        >
+        <h2 className="text-5xl md:text-7xl text-white uppercase tracking-tighter leading-tight mb-6">
           LA MÚSICA ESTÁ EN NUESTRO ADN
         </h2>
         <motion.h2
@@ -80,9 +82,9 @@ const GreenSpirit = () => {
               >
                 ALIANZAS QUE INSPIRAN
               </motion.h2>
-              <div className="space-y-4 sm:text-base md:text-lg leading-relaxed px-4">
+              <div className="space-y-6 py-10 sm:text-base md:text-lg leading-relaxed px-4">
                 <motion.p
-                  className="text-2xl lg:text-4xl  text-white"
+                  className="text-1xl  text-white"
                   initial={{ opacity: 0, y: 15 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
@@ -134,13 +136,13 @@ const GreenSpirit = () => {
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-green-500 rounded-lg p-8 text-center text-black h-100 flex flex-col justify-between">
+            <div className="bg-green-500 rounded-lg py-20 text-center text-black h-100 flex flex-col justify-between">
               <div className="flex justify-center">
-                <img src={Food} alt="Aceite" className="w-40 h-40" />
+                <img src={Food} alt="Aceite" className="w-40 h-20" />
               </div>
               <div>
                 <motion.p
-                  className="text-2xl font-bold leading-tight"
+                  className="text-2xl pb-10 font-bold leading-tight"
                   initial={{ opacity: 0, y: 15 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
@@ -152,9 +154,9 @@ const GreenSpirit = () => {
               </div>
             </div>
 
-            <div className="bg-green-500 rounded-lg p-8 text-center text-black h-100 flex flex-col justify-between">
+            <div className="bg-green-500 rounded-lg py-20 text-center text-black h-100 flex flex-col justify-between">
               <div className="flex justify-center mb-6">
-                <img src={Box} alt="Separación" className="w-40 h-40" />
+                <img src={Box} alt="Separación" className="w-40 h-20" />
               </div>
               <div>
                 <motion.p
@@ -172,13 +174,13 @@ const GreenSpirit = () => {
               </div>
             </div>
 
-            <div className="bg-green-500 rounded-lg p-8 text-center text-black h-100 flex flex-col justify-between">
+            <div className="bg-green-500 rounded-lg py-20 text-center text-black h-100 flex flex-col justify-between">
               <div className="flex justify-center mb-6">
-                <img src={Bottle} alt="Botella" className="w-40 h-40" />
+                <img src={Bottle} alt="Botella" className="w-40 h-20" />
               </div>
               <div>
                 <motion.p
-                  className="text-2xl font-bold leading-tight"
+                  className="text-2xl pb-20 font-bold leading-tight"
                   initial={{ opacity: 0, y: 15 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
