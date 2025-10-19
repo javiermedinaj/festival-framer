@@ -16,6 +16,7 @@ import BoxRecycle from "../../assets/Recycle/BoxRecycle.svg";
 import Derrame from "../../assets/Recycle/Derrame.png";
 import BlurImage from '../../assets/Recycle/imageBlur.png';
 import Sustentabilidad from '../../assets/sustentability.png';
+import { Link } from "react-router-dom";
 
 const Recycle = () => {
   return (
@@ -323,29 +324,24 @@ const Recycle = () => {
         </p>
         
         <div className="space-y-4 text-sm sm:text-base md:text-lg leading-relaxed px-4">
-          <p>
+          <p className="text-4xl text-white">
             Miles de fans se unieron a la causa, llenando botellas con plásticos de un solo
             uso y dándoles una segunda vida. Previo al festival del año 2024, los
             participantes entregaron en los puntos de retiro de entradas, Unicenter y La
             Rural, una enorme cantidad de botellas.
           </p>
           
-          <p>
+          <p className="text-2xl text-white">
             Gracias a esta acción creamos una montaña de material reciclable con el
             objetivo de transformarlo en mobiliario para la próxima edición del festival.
           </p>
         </div>
 
-        {/* Puntos de navegación */}
-        <div className="flex justify-center gap-3 mt-8">
-          <button className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-white"></button>
-          <button className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-white/50"></button>
-        </div>
+       
       </div>
     </div>
   </div>
   
-  {/* Wave inferior - Posicionada abajo SIN GAP */}
   <img 
     src={Wave7}
     alt="Wave"
@@ -354,7 +350,6 @@ const Recycle = () => {
   />
 </section>
 
-{/* section RR */}
 <section className="bg-black text-white py-10 md:py-32 px-6">
   <div className="max-w-7xl mx-auto text-center">
     <motion.h2
@@ -394,17 +389,19 @@ const Recycle = () => {
 
       <div className="flex justify-center lg:justify-end">
         <div className="bg-white rounded-md shadow-lg overflow-hidden max-w-sm w-full">
+      <Link to="/sustentabilidad">
           <motion.img 
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             whileHover={{ scale: 1.05 }}
           src={Sustentabilidad} alt="Sustentabilidad" className="w-full h-auto block" />
+        </Link>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+      <hr className="border-t border-gray-300 my-0" />
     </div>
   );
 };

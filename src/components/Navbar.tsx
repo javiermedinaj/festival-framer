@@ -88,10 +88,10 @@ alt="Festival Motion Logo"
 
             <div className="hidden md:flex items-center justify-end w-1/3">
               <div className="border-l-2 border-yellow-400/60 pl-5 pr-2">
-                <div className="text-[11px] sm:text-xs font-medium tracking-wide text-white/80 uppercase">
+                <div className="text-[20px] font-medium tracking-wide text-white/80 uppercase">
                   Hipódromo de San Isidro
                 </div>
-                <div className="text-[11px] sm:text-xs font-semibold tracking-wider text-yellow-400 mt-0.5">
+                <div className="text-[15px] font-semibold tracking-wider text-yellow-400 mt-0.5">
                   13, 14 y 15 de Marzo 2026
                 </div>
               </div>

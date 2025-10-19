@@ -5,6 +5,7 @@ import PlayList from "../components/PlayList";
 import Merch from "../components/Merch";
 import Schedules from "../components/Schedules";
 import LoaderGsap from "../components/Loader/LoaderGsap";
+import Newsletter from "../components/Newsletter";
 
 const Home = () => {
   const textInfoRef = useRef<HTMLElement | null>(null);
@@ -33,6 +34,7 @@ const Home = () => {
       <Schedules />
       <Merch />
       <PlayList />
+      <Newsletter />
     </>
   );
 };

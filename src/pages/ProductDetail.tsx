@@ -3,15 +3,12 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {ArrowLeft, Grid2x2 } from 'lucide-react'
 import productsData from '../data/products.json';
-
-// Importar imágenes
 import ShirtsImage from '../assets/Shirts.jpeg';
 import ShirtWhiteImage from '../assets/ShirtWhite.png';
 import ToteBagImage from '../assets/ToteBag.jpeg';
 import ToteBagExampleImage from '../assets/totebagExample.png';
 import ToteBagNegraImage from '../assets/TotebagNegra.png';
 
-// Mapeo de imágenes por producto
 const productImages: Record<number, string[]> = {
   1: [ShirtsImage, ShirtWhiteImage],
   2: [ToteBagImage, ToteBagExampleImage, ToteBagNegraImage],
@@ -58,7 +55,7 @@ const ProductDetail = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black pt-30 px-6">
+    <div className="min-h-screen bg-black py-30 px-6">
       <div className="max-w-7xl mx-auto">
         <motion.button
           initial={{ opacity: 0, x: -20 }}
@@ -216,7 +213,6 @@ const ProductDetail = () => {
               )}
             </div>
 
-            {/* Quantity */}
             <div className="mb-8">
               <h3 className="text-white font-black text-lg uppercase mb-4">Cantidad</h3>
               <div className="flex items-center gap-4">
@@ -243,7 +239,6 @@ const ProductDetail = () => {
               )}
             </div>
 
-            {/* Add to Cart */}
             <div className="space-y-4">
               <motion.button
                 whileHover={{ scale: selectedSize ? 1.02 : 1 }}
@@ -265,9 +260,9 @@ const ProductDetail = () => {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full bg-indigo-600 text-white py-4 rounded-lg font-bold hover:bg-indigo-700 transition-colors"
+                className="w-full bg-blue-500 text-2xl text-white py-4 rounded-lg font-bold hover:bg-indigo-700 transition-colors"
               >
-                Buy with ShopPay
+                Mercado Vago
               </motion.button>
 
               <button className="w-full text-neutral-400 hover:text-white text-sm font-bold underline">
@@ -277,6 +272,7 @@ const ProductDetail = () => {
           </motion.div>
         </div>
       </div>
+      
     </div>
   );
 };
